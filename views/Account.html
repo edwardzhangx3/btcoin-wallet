@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Account</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/Account.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1></h1>
+        <h3>Balance：<span id="balance"></span> BTC</h3>
+        <h3>Undefined Balance：<span id="unc_balance"></span> BTC</h3>
+        <h3>Main Address：<span id="main-address"></span></h3>
+
+        <button onclick="createSubAddress()">Create new child account</button>
+        <br><br>
+
+        <table>
+            <tr>
+                <td>path</td>
+                <td>Child Account Address</td>
+            </tr>
+            <tbody id="address-list-table">
+                
+            </tbody>
+        </table>
+        
+    </div>
+</body>
+
+</html>

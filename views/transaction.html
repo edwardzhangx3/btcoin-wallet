@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Transaction</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/transaction.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1>Transfer to the BTC Address</h1>
+        <form id="transaction-send-form" 　>
+            <input type="text" name="to" placeholder="Enter the address pay to">
+            <label>Address Pay to</label>
+            <br><br>
+
+            <input type="text" name="amount" placeholder="Enter the Amount(btc)">
+            <label>BTC money</label>
+            <br><br>
+
+            <input type="text" name="password" placeholder="Enter the password">
+            <label>Password</label>
+            <br><br>
+
+            <label>Select Wallet：</label>
+            <select name="walletname" id="transaction-send-address-select">
+            </select>
+            <br>
+
+            <label>Balance：</label><span id="balance"></span>　BTC
+            <br><br>
+
+            <button type="submit">Send </button>
+            
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Wallet</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/wallet.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1>Wallet List</h1>
+        <form id="wallet-create-form">
+            <button type="submit">Create Wallet</button>
+            <input type="text" name="walletname" placeholder="Enter Wallet Name">
+            <input type="text" name="password" placeholder="Enter Wallet password">
+        </form>
+        
+        <form id="wallet-mnemonic-import-form">
+            <button type="submit">mnemonic import</button>
+            <input type="text" name="walletname" placeholder="Enter Wallet Name">
+            <input type="text" name="password" placeholder="Enter new password">
+            <br><br>
+            <textarea rows="3" cols="50" name="mnemonic" placeholder="Enter mnemonic"></textarea>
+        </form>
+
+        <table>
+            <tbody id="wallet-list-table"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>

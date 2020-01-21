@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Wallet</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/transactionRecord.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1>Transaction List</h1>
+        <select name="walletname" id="transaction-record-wallet-select">
+        </select><span> Wallet</span>
+        <br>
+        <table>
+            <tr>
+                <td>Transaction</td>
+                <td>Money/BTC</td>
+                <td>Pay to</td>
+                <td>Transaction Time</td>
+                <td>Numbers confirmed</td>
+            </tr>
+            <tbody id="transaction-list-table"></tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
